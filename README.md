@@ -4,17 +4,18 @@ Generate complete marketing campaigns in seconds using AI. Input your brand deta
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28-red)
-![OpenAI](exithttps://img.shields.io/badge/OpenAI-GPT--4-green)
-## Features
+![Gemini](https://img.shields.io/badge/Google-Gemini_2.0-orange)
 
-- 🎯 **Multi-Channel Campaigns** — Instagram, LinkedIn, Email, Google Ads, and more
+## ✨ Features
+
+- 🎯 **Multi-Channel Campaigns** — Instagram, LinkedIn, Email, Google Ads, TikTok, and more
 - ✍️ **Multiple Ad Variations** — Get 3 copy options per channel
 - 🎨 **Creative Concepts** — Visual direction for designers
 - 📅 **Content Calendar** — Week-long posting schedule
 - 🏷️ **Hashtags & Keywords** — SEO and social optimization
 - ⬇️ **Export** — Download campaigns as Markdown
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Clone the repository
 
@@ -38,9 +39,16 @@ pip install -r requirements.txt
 
 ### 4. Set up your API key
 
+Get your free Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)
+
 ```bash
 cp .env.example .env
-# Edit .env and add your OpenAI API key
+# Edit .env and add your Gemini API key
+```
+
+Your `.env` file should look like:
+```
+GEMINI_API_KEY=your_api_key_here
 ```
 
 ### 5. Run the app
@@ -51,19 +59,21 @@ streamlit run app.py
 
 The app will open at `http://localhost:8501`
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 campaign-generator/
 ├── app.py                 # Streamlit UI
 ├── src/
+│   ├── __init__.py
 │   └── generator.py       # Core LLM logic
 ├── requirements.txt
 ├── .env.example
+├── .gitignore
 └── README.md
 ```
 
-## Usage
+## 🎮 Usage
 
 1. Enter your brand name and product description
 2. Describe your target audience (demographics, pain points, interests)
@@ -73,7 +83,7 @@ campaign-generator/
 6. Click "Generate Campaign"
 7. Download the results!
 
-## Example Output
+## 📋 Example Output
 
 The generator creates:
 
@@ -83,26 +93,27 @@ The generator creates:
 - **Creative Concepts** — Visual direction descriptions
 - **Content Calendar** — 1-week posting schedule
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Python 3.9+**
 - **Streamlit** — UI framework
-- **OpenAI GPT-4o-mini** — LLM for generation
+- **Google Gemini 2.0 Flash** — LLM for generation
 - **Pydantic** — Data validation
 
-## Future Enhancements
+## 🔮 Future Enhancements
 
+- [ ] OpenAI GPT-4 support
 - [ ] Claude API support
-- [ ] Image generation with DALL-E
+- [ ] Image generation with DALL-E / Imagen
 - [ ] Brand guidelines upload (RAG)
 - [ ] Campaign history & saving
 - [ ] A/B copy testing suggestions
-- [ ] Competitor analysis
+- [ ] Competitor analysis via web search
 
-## License
+## 📝 License
 
 MIT
 
 ---
 
-Built by [Your Name](https://github.com/yourusername)
+Built by [Rohan](https://github.com/raj0608)
